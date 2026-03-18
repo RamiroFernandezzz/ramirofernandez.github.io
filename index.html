@@ -19,7 +19,7 @@
       text-align: center;
     }
 
-    img {
+    img.profile {
       width: 150px;
       border-radius: 50%;
       border: 3px solid #38bdf8;
@@ -39,12 +39,12 @@
     p {
       max-width: 600px;
       margin: auto;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-size: 18px;
     }
 
     .section {
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .tech {
@@ -59,21 +59,23 @@
 
     .card {
       background: #1e293b;
-      padding: 20px;
-      margin: 15px auto;
+      padding: 25px;
+      margin: 20px auto;
       border-radius: 15px;
       width: 80%;
-      transition: transform 0.2s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeIn 1s ease;
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
+      margin-top: 12px;
+      padding: 10px 18px;
       background: #38bdf8;
       color: black;
       border-radius: 8px;
@@ -96,6 +98,22 @@
     a:hover {
       color: #0ea5e9;
     }
+
+    h4 {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -103,7 +121,7 @@
 
   <div class="container">
 
-    <img src="IMG_9071.png" alt="Foto de Ramiro">
+    <img src="IMG_9071.png" alt="Foto de Ramiro" class="profile">
 
     <h1>Ramiro Agustin Fernández</h1>
     <h2>💻 Estudiante de Ingeniería en Sistemas</h2>
@@ -114,6 +132,7 @@
       y crecer profesionalmente.
     </p>
 
+    <!-- TECNOLOGÍAS -->
     <div class="section">
       <h3>⚙️ Tecnologías</h3>
       <div>
@@ -126,21 +145,25 @@
       </div>
     </div>
 
+    <!-- PROYECTOS -->
     <div class="section">
       <h3>🚀 Proyectos</h3>
 
       <div class="card">
-        <p>API de tareas en TypeScript</p>
+        <h4>API de tareas en TypeScript</h4>
+        <p>API REST para gestionar tareas utilizando Node.js y TypeScript.</p>
         <a href="https://github.com/RamiroFernandezzz/GestordeTareas" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
-        <p>Sistema de Gestión de Restaurant</p>
+        <h4>Sistema de Gestión de Restaurant</h4>
+        <p>Sistema completo para administrar pedidos, mesas y productos de un restaurante.</p>
         <a href="https://github.com/RamiroFernandezzz/Rivelez-SistemaDeGestionRestaurant" target="_blank">Ver repositorio</a>
       </div>
 
     </div>
 
+    <!-- CONTACTO -->
     <div class="section">
       <h3>📞 Contacto</h3>
 
@@ -151,12 +174,6 @@
         </p>
       </div>
     </div>
-
-  </div>
-
-</body>
-</html>
-
 
   </div>
 
