@@ -6,18 +6,24 @@
 
   <style>
     body {
-      background-color: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #020617);
       color: white;
       font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
       text-align: center;
-      padding: 50px;
     }
 
     img {
       width: 150px;
       border-radius: 50%;
-      margin-bottom: 20px;
       border: 3px solid #38bdf8;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -37,17 +43,8 @@
       font-size: 18px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      background: #1e293b;
-      margin: 10px auto;
-      padding: 12px;
-      width: 300px;
-      border-radius: 10px;
+    .section {
+      margin-top: 40px;
     }
 
     .tech {
@@ -60,48 +57,86 @@
       font-weight: bold;
     }
 
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 15px auto;
+      border-radius: 15px;
+      width: 80%;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
     a {
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    a:hover {
+      color: #0ea5e9;
     }
   </style>
 </head>
 
 <body>
 
-  <img src="IMG_9071.png" alt="Foto de Ramiro">
+  <div class="container">
 
-  <h1>Ramiro Fernández</h1>
-  <h2>💻 Estudiante de Ingeniería en Sistemas</h2>
+    <img src="foto.png" alt="Foto de Ramiro">
 
-  <p>
-    Soy estudiante de Ingeniería en Sistemas con interés en el desarrollo de software.
-    Me encuentro en constante aprendizaje, creando proyectos académicos y personales
-    para mejorar mis habilidades y crecer profesionalmente.
-  </p>
+    <h1>Ramiro Fernández</h1>
+    <h2>💻 Estudiante de Ingeniería en Sistemas</h2>
 
-  <h3>⚙️ Tecnologías</h3>
-  <div>
-    <span class="tech">Java</span>
-    <span class="tech">JavaScript</span>
-    <span class="tech">TypeScript</span>
-    <span class="tech">Node.js</span>
-    <span class="tech">Git</span>
+    <p>
+      Estudiante de Ingeniería en Sistemas apasionado por el desarrollo de software.
+      Actualmente creando proyectos académicos y personales para mejorar mis habilidades
+      y crecer profesionalmente.
+    </p>
+
+    <div class="section">
+      <h3>⚙️ Tecnologías</h3>
+      <div>
+        <span class="tech">Java</span>
+        <span class="tech">JavaScript</span>
+        <span class="tech">TypeScript</span>
+        <span class="tech">Node.js</span>
+        <span class="tech">Git</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>🚀 Proyectos</h3>
+
+      <div class="card">
+        <p>API de tareas en TypeScript</p>
+      </div>
+
+      <div class="card">
+        <p>Proyecto de la facultad</p>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h3>📞 Contacto</h3>
+      <p>
+        <a href="https://github.com/RamiroFernandezzz" target="_blank">
+          GitHub
+        </a>
+      </p>
+
+      <p>
+        <a href="fernandezramiro364@gmail.com">
+          Enviarme un correo
+        </a>
+      </p>
+    </div>
+
   </div>
-
-  <h3>🚀 Proyectos</h3>
-  <ul>
-    <li>API de tareas en TypeScript</li>
-    <li>Proyecto de la facultad</li>
-  </ul>
-
-  <h3>📞 Contacto</h3>
-  <p>
-    <a href="https://github.com/RamiroFernandezzz" target="_blank">
-      Ver mi GitHub
-    </a>
-  </p>
 
 </body>
 </html>
