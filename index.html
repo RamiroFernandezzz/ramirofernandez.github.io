@@ -2,6 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
+  <!-- IMPORTANTE PARA MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ramiro Agustin Fernández</title>
 
   <style>
@@ -114,6 +118,42 @@
         transform: translateY(0);
       }
     }
+
+    /* 🔥 VERSION MOBILE */
+    @media (max-width: 600px) {
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .card {
+        width: 95%;
+        padding: 20px;
+      }
+
+      img.profile {
+        width: 120px;
+      }
+
+      .tech {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -179,4 +219,3 @@
 
 </body>
 </html>
- 
